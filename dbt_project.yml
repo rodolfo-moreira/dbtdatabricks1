@@ -29,15 +29,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
-models:
-  dbtdatabricks1:
-    # Config indicated by + and applies to all files under models/example/
-    bronze:
-      +schema: bronze
-    silver:
-      +schema: silver
-    gold:
-      +schema: gold
 
 seeds:
   dbtdatabricks1:
